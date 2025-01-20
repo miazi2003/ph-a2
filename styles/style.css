@@ -56,58 +56,60 @@ nav {
 }
 
 #btn-1 {
-    color: rgb(254, 163, 1);
+  color: rgb(254, 163, 1);
 }
 #btn-2 {
-    color: rgb(1, 172, 253);
+  color: rgb(1, 172, 253);
 }
 #btn-3 {
-    color: rgb(5, 212, 223);
+  color: rgb(5, 212, 223);
 }
 #btn-4 {
-    color: rgb(93, 88, 239);
+  color: rgb(93, 88, 239);
 }
 
-.contact{
-    height: auto;
-    width: auto;
-    padding: 8px 30px;
-    background-color: rgb(254, 163, 1);
-    border: 1px solid orange;
-    border-radius: 8px;
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 600;
-    transition: ease-in-out .3s;
+.contact {
+  height: auto;
+  width: auto;
+  padding: 8px 30px;
+  background-color: rgb(254, 163, 1);
+  border: 1px solid orange;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: ease-in-out 0.3s;
 }
-.contact:hover{
-    background-color: white;
-    color: orange;
-}
-
-.ham-menu{
-    display: none;
+.contact:hover {
+  background-color: white;
+  color: orange;
 }
 
-
-
+.ham-menu {
+  display: none;
+}
 
 /* mobile device responsive */
-@media screen  and (max-width:576px){
-    .hide{
-        display: none;
-    }
-    .show{
-        display: block;
-    }
+@media screen and (max-width: 576px) {
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
 
-    .ham-menu{
-        height: 40px;
-        width: 40px;
-        display: flex;
-        align-items: center;
-        font-size: 1.23rem;
-    }
+  .ham-menu {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.23rem;
+    transition: ease-in-out 0.3s;
+  }
+  .ham-menu:hover {
+    background-color: #e4e2e2;
+  }
 }
-
-
