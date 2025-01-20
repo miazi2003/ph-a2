@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", serif;
+}
+/* header section css */
+.header {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 90%;
+  margin: 10px auto;
+}
+nav {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.brand-img {
+  height: 40px;
+  width: 40px;
+}
+.brand-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-btn ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.nav-btn ul li {
+  list-style-type: none;
+}
+.nav-btn ul li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+#btn-1 {
+    color: rgb(254, 163, 1);
+}
+#btn-2 {
+    color: rgb(1, 172, 253);
+}
+#btn-3 {
+    color: rgb(5, 212, 223);
+}
+#btn-4 {
+    color: rgb(93, 88, 239);
+}
+
+.contact{
+    height: auto;
+    width: auto;
+    padding: 8px 30px;
+    background-color: rgb(254, 163, 1);
+    border: 1px solid orange;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: ease-in-out .3s;
+}
+.contact:hover{
+    background-color: white;
+    color: orange;
+}
+
+.ham-menu{
+    display: none;
+}
+
+
+
+
+/* mobile device responsive */
+@media screen  and (max-width:576px){
+    .hide{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+
+    .ham-menu{
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        font-size: 1.25rem;
+    }
+}
+
+
