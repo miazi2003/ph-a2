@@ -6,14 +6,23 @@
   box-sizing: border-box;
   font-family: "Quicksand", serif;
 }
+/* shared style */
+.orange{
+  color: orange;
+}
+.skyblue{
+  color: rgb(1, 172, 253)
+}
 /* header section css */
 .header {
   height: auto;
-  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   max-width: 90%;
-  margin: 10px auto;
+  margin: 0px auto;
+  padding-top: 10px;
+  background-color: white;
 }
 nav {
   height: auto;
@@ -89,6 +98,55 @@ nav {
   display: none;
 }
 
+.banner-section {
+  height: 500px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner-text{
+  height: 50%;
+  width: 50%;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+}
+
+.banner-text h1{
+  font-size: 2.8rem;
+}
+.banner-text p{
+  font-size: 1.10rem;
+  font-weight: 400;
+}
+.banner-img{
+  height: 100%;
+  width: 40%;
+}
+.banner-img img{
+  height: 100%;
+  width: 100%;
+}
+.banner-btn button{
+  height: auto;
+  width: auto;
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+.banner-btn button:hover{
+  background-color: white;
+  color: black;
+  transition: ease-in-out .3s;
+
+}
+
 /* mobile device responsive */
 @media screen and (max-width: 576px) {
   .hide {
@@ -97,7 +155,13 @@ nav {
   .show {
     display: block;
   }
-
+  .header {
+    max-width: 100%;
+  }
+  nav {
+    padding-bottom: 10px;
+    padding: 10px 20px;
+  }
   .ham-menu {
     height: 40px;
     width: 40px;
@@ -112,4 +176,18 @@ nav {
   .ham-menu:hover {
     background-color: #e4e2e2;
   }
+  .brand-img {
+    height: 40px;
+    width: 40px;
+  }
+  .brand-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .line {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(254, 163, 1);
+  }
+
 }
