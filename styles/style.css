@@ -13,6 +13,7 @@
 .skyblue {
   color: rgb(1, 172, 253);
 }
+
 /* header section css */
 .header {
   height: auto;
@@ -311,9 +312,9 @@ border: 1px solid plum;
   align-items: center;
   border-radius: 10px;
   background-color: white;
-  gap: 10px;
+  gap: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  
+  padding-bottom: 20px;
 }
 .four-card-container{
   display: grid;
@@ -348,6 +349,7 @@ grid-row: span 2;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  
 }
 
 .storySec-btn button{
@@ -366,9 +368,45 @@ grid-row: span 2;
   color: black;
   transition: ease-in-out 0.3s;
 }
+.hide-main{
+  display: none;
+}
 
+.date-banner{
+  height: 35px;
+  width: 150px;
+  background-color: blanchedalmond;
+  border-radius: 20px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 10;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:-20px;
+  margin-left: 25px;
 
+}
 
+.date-banner p{
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: white;
+}
+ #date-1{
+  background-color: rgb(60, 216, 232);
+ }
+ #date-1 p{
+  font-size: 0.8rem;
+  color:white ;
+ }
+ #date-2{
+  background-color: rgb(149, 178, 38);
+ }
+ #date-3{
+  background-color: rgb(93, 88, 240);
+ }
 
 
 
@@ -455,5 +493,16 @@ grid-row: span 2;
 }
 
 /* story section responsive */
-
+.story-card-container{
+display: block;
+}
+#big-card{
+  display: none;
+}
+.four-card-container{
+  display: grid;
+}
+.story-img-box{
+  height: 50%;
+}
 }
