@@ -350,8 +350,22 @@ grid-row: span 2;
   gap: 20px;
 }
 
-
-
+.storySec-btn button{
+  height: auto;
+  width: auto;
+  padding: 10px 25px;
+  background-color: black;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+.storySec-btn button:hover {
+  background-color: white;
+  color: black;
+  transition: ease-in-out 0.3s;
+}
 
 
 
