@@ -149,7 +149,6 @@ nav {
 /* curriculum section css */
 .main {
   height: auto;
-  max-width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -159,7 +158,7 @@ nav {
 .curriculum {
   height: auto;
   width: 100%;
-  padding: 30px 0;
+  padding: 30px 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -281,6 +280,83 @@ transition: ease-in-out .3s;
 border: 1px solid plum;
 }
 
+/* story section css */
+.stories{
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 5%;
+  background-image: url("../assets/bg.png");
+  background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
+.stories h1{
+  font-size: 2.5rem;
+}
+.story-card-container{
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr) ;
+  justify-content: center;
+  gap: 20px;
+}
+
+.story-card{
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+  gap: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+}
+.four-card-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+#big-card{
+height: auto;
+grid-row: span 2;
+}
+#big-card p{
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(102, 102, 102);
+}
+
+.story-img-box{
+  height: 70%;
+  width: 100%;
+  border-radius: 10px;
+}
+.story-img-box img{
+  height: 100%;
+  width: 100%;
+  border-top-left-radius:10px ;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+.story-text{
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+
+
+
+
+
 
 /* mobile device responsive */
 @media screen and (max-width: 576px) {
@@ -363,5 +439,7 @@ border: 1px solid plum;
   grid-template-columns: repeat(1, 1fr);
   gap: 30px;
 }
+
+/* story section responsive */
 
 }
