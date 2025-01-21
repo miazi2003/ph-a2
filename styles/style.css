@@ -501,8 +501,21 @@ display: block;
 }
 .four-card-container{
   display: grid;
+  gap: 5px;
+  row-gap: 20px;
 }
 .story-img-box{
   height: 50%;
 }
+#res{
+  padding-top: 30px;
+}
+
+.date-banner{
+  height: 30px;
+  width: 130px;
+  margin-left: 10px;
+
+}
+
 }
