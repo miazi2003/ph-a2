@@ -322,4 +322,16 @@ transition: ease-in-out .3s;
 
 
   /* curriculum section responsive */
+
+.curriculum h1 {
+  font-size: 1.75rem;
+}
+.curri-card-container {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+
 }
