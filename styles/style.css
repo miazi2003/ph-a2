@@ -7,11 +7,11 @@
   font-family: "Quicksand", serif;
 }
 /* shared style */
-.orange{
+.orange {
   color: orange;
 }
-.skyblue{
-  color: rgb(1, 172, 253)
+.skyblue {
+  color: rgb(1, 172, 253);
 }
 /* header section css */
 .header {
@@ -106,30 +106,30 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-.banner-text{
+.banner-text {
   height: 50%;
   width: 50%;
- display: flex;
- flex-direction: column;
- gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.banner-text h1{
+.banner-text h1 {
   font-size: 2.8rem;
 }
-.banner-text p{
-  font-size: 1.10rem;
+.banner-text p {
+  font-size: 1.1rem;
   font-weight: 600;
 }
-.banner-img{
+.banner-img {
   height: 100%;
   width: 40%;
 }
-.banner-img img{
+.banner-img img {
   height: 100%;
   width: 100%;
 }
-.banner-btn button{
+.banner-btn button {
   height: auto;
   width: auto;
   padding: 10px 15px;
@@ -140,11 +140,116 @@ nav {
   border-radius: 8px;
   border: 1px solid black;
 }
-.banner-btn button:hover{
+.banner-btn button:hover {
   background-color: white;
   color: black;
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
+}
 
+/* curriculum section css */
+.main {
+  height: auto;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+}
+.curriculum {
+  height: auto;
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  background-image: url("../assets/bg.png");
+}
+.curriculum h1 {
+  font-size: 2.5rem;
+}
+.curri-card-container {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
+.curri-card {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  gap: 20px;
+  padding: 30px 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.img-box-c{
+  height: 40%;
+  width: 30%;
+}
+.img-box-c img{
+  height: 100%;
+  width: 100%;
+}
+#card-1 {
+  background-color: white;
+  background: linear-gradient(
+      180deg,
+      rgb(222, 245, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+#card-2 {
+  background-color: white;
+  background: linear-gradient(
+      180deg,
+      rgb(255, 244, 220),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+#card-3 {
+  background-color: white;
+  background: linear-gradient(
+      180deg,
+      rgb(238, 225, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+.curri-card p{
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgb(128, 128, 128);
+}
+
+.btn-con button{
+  background-color: transparent;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+#con-1 button{
+color: rgb(100, 200, 255);
+}
+#con-2 button{
+  color: rgb(240, 170, 0);
+}
+#con-3 button{
+  color: rgb(135, 0, 255);
+}
+
+#con-1 button:hover,#con-2 button:hover,#con-3 button:hover{
+color: black;
+transition: ease-in-out .3s;
 }
 
 /* mobile device responsive */
@@ -190,33 +295,31 @@ nav {
     background-color: rgb(254, 163, 1);
   }
 
-
   /* banner responsive */
-  .banner-section{
-    height: 1000px;
+  .banner-section {
+    height: auto;
     flex-direction: column-reverse;
     padding: 0px 20px;
     gap: 30px;
   }
-  .banner-img{
+  .banner-img {
     height: auto;
     width: 100%;
   }
-  .banner-img img{
+  .banner-img img {
     height: 100%;
     width: 100%;
   }
-  .banner-text{
+  .banner-text {
     height: 400%;
     width: 100%;
-   text-align: center;
+    text-align: center;
   }
-  .banner-text h1{
+  .banner-text h1 {
     font-size: 2rem;
   }
 
-  
-  
 
+
+  /* curriculum section responsive */
 }
-
