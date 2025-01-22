@@ -165,6 +165,7 @@ nav {
   align-items: center;
   gap: 50px;
   background-image: url("../assets/bg.png");
+  background-size: 100%;
 }
 .curriculum h1 {
   font-size: 2.5rem;
@@ -188,11 +189,11 @@ nav {
   text-align: center;
 }
 
-.img-box-c{
+.img-box-c {
   height: 40%;
   width: 30%;
 }
-.img-box-c img{
+.img-box-c img {
   height: 100%;
   width: 100%;
 }
@@ -224,36 +225,37 @@ nav {
     rgb(255, 255, 255);
 }
 
-.curri-card p{
+.curri-card p {
   font-size: 0.8rem;
   font-weight: 500;
   color: rgb(128, 128, 128);
 }
 
-.btn-con button{
+.btn-con button {
   background-color: transparent;
   border: none;
   font-size: 0.9rem;
   font-weight: 700;
 }
 
-#con-1 button{
-color: rgb(100, 200, 255);
+#con-1 button {
+  color: rgb(100, 200, 255);
 }
-#con-2 button{
+#con-2 button {
   color: rgb(240, 170, 0);
 }
-#con-3 button{
+#con-3 button {
   color: rgb(135, 0, 255);
 }
 
-#con-1 button:hover,#con-2 button:hover,#con-3 button:hover{
-color: black;
-transition: ease-in-out .3s;
+#con-1 button:hover,
+#con-2 button:hover,
+#con-3 button:hover {
+  color: black;
+  transition: ease-in-out 0.3s;
 }
 
-
-.rl-nav{
+.rl-nav {
   height: auto;
   width: 100%;
   display: flex;
@@ -261,7 +263,7 @@ transition: ease-in-out .3s;
   justify-content: center;
   gap: 10px;
 }
-.rl{
+.rl {
   height: 50px;
   width: 50px;
   border-radius: 100%;
@@ -272,17 +274,16 @@ transition: ease-in-out .3s;
   justify-content: center;
   font-size: 20px;
   color: white;
-  
 }
-.rl:hover{
-background-color: white; 
-color: plum;
-transition: ease-in-out .3s;
-border: 1px solid plum;
+.rl:hover {
+  background-color: white;
+  color: plum;
+  transition: ease-in-out 0.3s;
+  border: 1px solid plum;
 }
 
 /* story section css */
-.stories{
+.stories {
   height: auto;
   width: 100%;
   display: flex;
@@ -290,22 +291,23 @@ border: 1px solid plum;
   align-items: center;
   gap: 30px;
   padding: 30px 5%;
-  background-image: url("../assets/bg.png");
-  background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+  background: url("../assets/bg.png"),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.1) 80%);
+  background-size: 100%;
 }
-.stories h1{
+.stories h1 {
   font-size: 2.5rem;
 }
-.story-card-container{
+.story-card-container {
   height: auto;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2,1fr) ;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   gap: 20px;
 }
 
-.story-card{
+.story-card {
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -316,43 +318,42 @@ border: 1px solid plum;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding-bottom: 20px;
 }
-.four-card-container{
+.four-card-container {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-#big-card{
-height: auto;
-grid-row: span 2;
+#big-card {
+  height: auto;
+  grid-row: span 2;
 }
-#big-card p{
+#big-card p {
   font-size: 1rem;
   font-weight: 600;
   color: rgb(102, 102, 102);
 }
 
-.story-img-box{
+.story-img-box {
   height: 70%;
   width: 100%;
   border-radius: 10px;
 }
-.story-img-box img{
+.story-img-box img {
   height: 100%;
   width: 100%;
-  border-top-left-radius:10px ;
+  border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: cover;
 }
 
-.story-text{
+.story-text {
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  
 }
 
-.storySec-btn button{
+.storySec-btn button {
   height: auto;
   width: auto;
   padding: 10px 25px;
@@ -368,11 +369,11 @@ grid-row: span 2;
   color: black;
   transition: ease-in-out 0.3s;
 }
-.hide-main{
+.hide-main {
   display: none;
 }
 
-.date-banner{
+.date-banner {
   height: 35px;
   width: 150px;
   background-color: blanchedalmond;
@@ -384,31 +385,98 @@ grid-row: span 2;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top:-20px;
+  margin-top: -20px;
   margin-left: 25px;
-
 }
 
-.date-banner p{
+.date-banner p {
   font-size: 0.8rem;
   font-weight: 500;
   color: white;
 }
- #date-1{
+#date-1 {
   background-color: rgb(60, 216, 232);
- }
- #date-1 p{
+}
+#date-1 p {
   font-size: 0.8rem;
-  color:white ;
- }
- #date-2{
+  color: white;
+}
+#date-2 {
   background-color: rgb(149, 178, 38);
- }
- #date-3{
+}
+#date-3 {
   background-color: rgb(93, 88, 240);
- }
+}
 
-
+.footer {
+  height: auto;
+  width: 100%;
+  background-color: rgb(1, 172, 253);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 100px 50px;
+  gap: 20px;
+  margin-top: 30px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  padding: 0 40px;
+}
+.fbox {
+  display: flex;
+  align-items: center;
+}
+.fbox h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+.img-foot {
+  height: 60px;
+  width: 60px;
+}
+.img-foot img {
+  height: 100%;
+  width: 100%;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  padding: 0 40px;
+}
+.links div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  padding: 2px auto;
+}
+.links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.links ul li {
+  list-style-type: none;
+}
+.links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
 
 /* mobile device responsive */
 @media screen and (max-width: 576px) {
@@ -477,45 +545,41 @@ grid-row: span 2;
     font-size: 2rem;
   }
 
-
-
   /* curriculum section responsive */
 
-.curriculum h1 {
-  font-size: 1.75rem;
-}
-.curri-card-container {
-  height: auto;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 30px;
-}
+  .curriculum h1 {
+    font-size: 1.75rem;
+  }
+  .curri-card-container {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
 
-/* story section responsive */
-.story-card-container{
-display: block;
-}
-#big-card{
-  display: none;
-}
-.four-card-container{
-  display: grid;
-  gap: 5px;
-  row-gap: 20px;
-}
-.story-img-box{
-  height: 50%;
-}
-#res{
-  padding-top: 30px;
-}
+  /* story section responsive */
+  .story-card-container {
+    display: block;
+  }
+  #big-card {
+    display: none;
+  }
+  .four-card-container {
+    display: grid;
+    gap: 5px;
+    row-gap: 20px;
+  }
+  .story-img-box {
+    height: 50%;
+  }
+  #res {
+    padding-top: 30px;
+  }
 
-.date-banner{
-  height: 30px;
-  width: 130px;
-  margin-left: 10px;
-
-}
-
+  .date-banner {
+    height: 30px;
+    width: 130px;
+    margin-left: 10px;
+  }
 }
