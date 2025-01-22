@@ -93,6 +93,7 @@ nav {
 .contact:hover {
   background-color: white;
   color: orange;
+  cursor: pointer;
 }
 
 .ham-menu {
@@ -145,6 +146,7 @@ nav {
   background-color: white;
   color: black;
   transition: ease-in-out 0.3s;
+  cursor: pointer;
 }
 
 /* curriculum section css */
@@ -253,6 +255,7 @@ nav {
 #con-3 button:hover {
   color: black;
   transition: ease-in-out 0.3s;
+  cursor: pointer;
 }
 
 .rl-nav {
@@ -280,6 +283,7 @@ nav {
   color: plum;
   transition: ease-in-out 0.3s;
   border: 1px solid plum;
+  cursor: pointer;
 }
 
 /* story section css */
@@ -368,6 +372,7 @@ nav {
   background-color: white;
   color: black;
   transition: ease-in-out 0.3s;
+  cursor: pointer;
 }
 .hide-main {
   display: none;
