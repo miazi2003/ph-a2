@@ -149,6 +149,24 @@ nav {
   cursor: pointer;
 }
 
+
+/* marquee design */
+marquee{
+  height: 100px;
+  width: 100%;
+  padding: 20px 20px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+marquee img{
+  height: 100%;
+  width: 80px;
+  object-fit: contain;
+}
+
 /* curriculum section css */
 .main {
   height: auto;
@@ -156,12 +174,12 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .curriculum {
   height: auto;
   width: 100%;
-  padding: 30px 5%;
+  padding: 10px 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -233,20 +251,21 @@ nav {
   color: rgb(128, 128, 128);
 }
 
-.btn-con button {
+.btn-con a {
   background-color: transparent;
   border: none;
   font-size: 0.9rem;
   font-weight: 700;
+  text-decoration: none;
 }
 
-#con-1 button {
+#con-1 a {
   color: rgb(100, 200, 255);
 }
-#con-2 button {
+#con-2 a {
   color: rgb(240, 170, 0);
 }
-#con-3 button {
+#con-3 a {
   color: rgb(135, 0, 255);
 }
 
